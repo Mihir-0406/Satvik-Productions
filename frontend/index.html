@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Satvik Production — A premium production house offering digital marketing, brand advertisement, storytelling, social media management, video production, and creative talent solutions.">
+  <meta name="keywords"
+    content="production house, digital marketing, brand advertisement, storytelling, social media management, video production, photography, creative agency">
+  <meta name="author" content="Satvik Production">
+  <meta property="og:title" content="Satvik Production — Where Creativity Meets Excellence">
+  <meta property="og:description"
+    content="Premium production house specializing in digital marketing, brand films, storytelling, and creative talent solutions.">
+  <meta property="og:type" content="website">
+  <title>Satvik Production — Where Creativity Meets Excellence</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css?v=1.3">
+  <link rel="stylesheet" href="css/animations.css?v=1.3">
+  <link rel="stylesheet" href="css/components.css?v=1.3">
+  <link rel="stylesheet" href="css/home.css?v=1.3">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23F5A623'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='20' font-weight='bold' fill='%230A0A0F'%3ES%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+
+  <!-- ==================== PRELOADER ==================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__logo">Satvik <span>Production</span></div>
+    <div class="preloader__bar">
+      <div class="preloader__bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <!-- Logo -->
+      <a href="index.html" class="navbar__logo" id="nav-logo">
+        <div class="navbar__logo-icon">S</div>
+        <div class="navbar__logo-text">Satvik <span>Production</span></div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="navbar__menu" id="nav-menu">
+        <a href="index.html" class="navbar__link active" id="nav-home">Home</a>
+        <a href="services.html" class="navbar__link" id="nav-services">Services</a>
+        <a href="portfolio.html" class="navbar__link" id="nav-portfolio">Portfolio</a>
+        <a href="about.html" class="navbar__link" id="nav-about">About</a>
+        <a href="hire-talent.html" class="navbar__link" id="nav-hire">Hire Talent</a>
+        <a href="contact.html" class="navbar__cta" id="nav-contact-btn">
+          Let's Talk
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="navbar__hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="navbar__mobile-menu" id="nav-mobile-menu">
+      <a href="index.html" class="navbar__link active">Home</a>
+      <a href="services.html" class="navbar__link">Services</a>
+      <a href="portfolio.html" class="navbar__link">Portfolio</a>
+      <a href="about.html" class="navbar__link">About</a>
+      <a href="hire-talent.html" class="navbar__link">Hire Talent</a>
+      <a href="contact.html" class="navbar__link">Contact</a>
+      <a href="contact.html" class="btn btn--primary">Let's Talk</a>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="hero">
+    <!-- Background -->
+    <div class="hero__bg">
+      <img src="assets/images/hero-bg.png" alt="Cinematic production studio" class="hero__bg-image">
+      <div class="hero__bg-overlay"></div>
+      <div class="hero__bg-grain"></div>
+    </div>
+
+    <!-- Floating Shapes -->
+    <div class="hero__shapes">
+      <div class="hero__shape hero__shape--1"></div>
+      <div class="hero__shape hero__shape--2"></div>
+      <div class="hero__shape hero__shape--3"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="badge">
+            <span>🎬</span> Premium Production House
+          </span>
+        </div>
+
+        <h1 class="hero__title">
+          We Don't Just Tell
+          <span class="hero__title-italic">Stories.</span><br>
+          <span class="hero__title-accent">We Create Experiences.</span>
+        </h1>
+
+        <p class="hero__description">
+          From digital marketing to brand films, we bring your vision to life with cinematic excellence. Your story
+          deserves to be told beautifully.
+        </p>
+
+        <div class="hero__actions">
+          <a href="portfolio.html" class="btn btn--primary btn--large" id="hero-cta">
+            Explore Our Work
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__icon">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+          <button class="hero__play-btn" id="hero-play">
+            <span class="hero__play-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                stroke="none">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </span>
+            Watch Showreel
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES OVERVIEW ==================== -->
+  <section class="section services-overview" id="services">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header reveal">
+        <span class="text-label">What We Do</span>
+        <h2 class="heading-lg">
+          Crafting <span class="text-gradient">Creative Solutions</span><br>
+          That Drive Results
+        </h2>
+        <p class="text-body-lg">
+          We offer a full spectrum of creative services to elevate your brand, tell your story, and connect with your
+          audience.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-overview__grid">
+        <!-- Digital Marketing -->
+        <div class="service-card reveal delay-1" id="service-digital-marketing">
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18" />
+                <path d="m19 9-5 5-4-4-3 3" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Digital Marketing</h3>
+            <p class="service-card__desc">Strategic SEO, PPC, email campaigns, and analytics-driven growth strategies to
+              amplify your digital presence.</p>
+            <a href="services.html" class="service-card__link">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Brand Advertisement -->
+        <div class="service-card reveal delay-2" id="service-brand-ads">
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Brand Advertisement</h3>
+            <p class="service-card__desc">TVCs, brand films, product launches, and creative ad campaigns that make your
+              brand unforgettable.</p>
+            <a href="services.html" class="service-card__link">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Storytelling -->
+        <div class="service-card reveal delay-3" id="service-storytelling">
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+                <path d="m15 5 4 4" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Storytelling & Scripts</h3>
+            <p class="service-card__desc">Compelling narratives and scripts for brands, films, and digital content that
+              captivate audiences.</p>
+            <a href="services.html" class="service-card__link">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Social Media Management -->
+        <div class="service-card reveal delay-1" id="service-social-media">
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Social Media Management</h3>
+            <p class="service-card__desc">Content calendars, engagement strategies, growth hacking, and multi-platform
+              management.</p>
+            <a href="services.html" class="service-card__link">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Video Production -->
+        <div class="service-card reveal delay-2" id="service-video-production">
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m22 8-6 4 6 4V8Z" />
+                <rect width="14" height="12" x="2" y="6" rx="2" ry="2" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Video Production</h3>
+            <p class="service-card__desc">Short films, documentaries, corporate videos, event coverage, and cinematic
+              productions.</p>
+            <a href="services.html" class="service-card__link">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Photography -->
+        <div class="service-card reveal delay-3" id="service-photography">
+          <div class="service-card__content">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
+                <circle cx="12" cy="13" r="3" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Photography</h3>
+            <p class="service-card__desc">Brand shoots, product photography, event photography, portraits, and editorial
+              sessions.</p>
+            <a href="services.html" class="service-card__link">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SHOWREEL ==================== -->
+  <section class="section showreel" id="showreel">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="text-label">Our Showreel</span>
+        <h2 class="heading-lg">See Our <span class="text-gradient">Work in Action</span></h2>
+        <p class="text-body-lg">A glimpse into the stories we've brought to life, the brands we've elevated, and the
+          moments we've captured.</p>
+      </div>
+
+      <div class="showreel__wrapper reveal-scale" id="showreel-player">
+        <img src="assets/images/showreel-thumb.png" alt="Satvik Production Showreel" class="showreel__image">
+        <div class="showreel__overlay">
+          <div class="showreel__play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"
+              stroke="none">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+          </div>
+          <span class="showreel__label">Play Showreel</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STATS COUNTER ==================== -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat-item reveal delay-1">
+          <div class="stat-item__number">
+            <span data-count="150">0</span><span class="stat-item__suffix">+</span>
+          </div>
+          <div class="stat-item__label">Projects Delivered</div>
+        </div>
+
+        <div class="stat-item reveal delay-2">
+          <div class="stat-item__number">
+            <span data-count="85">0</span><span class="stat-item__suffix">+</span>
+          </div>
+          <div class="stat-item__label">Happy Clients</div>
+        </div>
+
+        <div class="stat-item reveal delay-3">
+          <div class="stat-item__number">
+            <span data-count="5">0</span><span class="stat-item__suffix">+</span>
+          </div>
+          <div class="stat-item__label">Years Experience</div>
+        </div>
+
+        <div class="stat-item reveal delay-4">
+          <div class="stat-item__number">
+            <span data-count="25">0</span><span class="stat-item__suffix">+</span>
+          </div>
+          <div class="stat-item__label">Creative Team</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CLIENT LOGOS ==================== -->
+  <section class="clients" id="clients">
+    <div class="clients__label">Trusted By Leading Brands</div>
+    <div class="clients__track">
+      <div class="clients__item"><span>BrandOne</span></div>
+      <div class="clients__item"><span>MediaCorp</span></div>
+      <div class="clients__item"><span>TechVista</span></div>
+      <div class="clients__item"><span>StartupX</span></div>
+      <div class="clients__item"><span>RBFHelpSystem</span></div>
+      <div class="clients__item"><span>DigitalEdge</span></div>
+      <div class="clients__item"><span>VisionPro</span></div>
+      <div class="clients__item"><span>AdVantage</span></div>
+      <!-- Duplicate for infinite scroll -->
+      <div class="clients__item"><span>BrandOne</span></div>
+      <div class="clients__item"><span>MediaCorp</span></div>
+      <div class="clients__item"><span>TechVista</span></div>
+      <div class="clients__item"><span>StartupX</span></div>
+      <div class="clients__item"><span>RBFHelpSystem</span></div>
+      <div class="clients__item"><span>DigitalEdge</span></div>
+      <div class="clients__item"><span>VisionPro</span></div>
+      <div class="clients__item"><span>AdVantage</span></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT PREVIEW ==================== -->
+  <section class="section about-preview" id="about-preview">
+    <div class="container">
+      <div class="about-preview__grid">
+        <!-- Image -->
+        <div class="about-preview__image-wrapper reveal-left">
+          <img src="assets/images/about-team.png" alt="Satvik Production Team" class="about-preview__image">
+          <div class="about-preview__image-frame"></div>
+          <div class="about-preview__experience">
+            <div class="about-preview__experience-number">5+</div>
+            <div class="about-preview__experience-text">Years of Excellence</div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-preview__content reveal-right">
+          <span class="badge">About Satvik Production</span>
+          <h2 class="about-preview__title">
+            We Are a Team of <span class="text-gradient">Creative Visionaries</span>
+          </h2>
+          <p class="about-preview__desc">
+            Satvik Production is more than a production house — we are storytellers, strategists, and creative
+            problem-solvers. From brand campaigns to short films, we blend artistry with strategy to create content that
+            resonates, inspires, and delivers measurable results.
+          </p>
+
+          <div class="about-preview__features">
+            <div class="about-preview__feature">
+              <svg class="about-preview__feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              <span>Award-Winning Work</span>
+            </div>
+            <div class="about-preview__feature">
+              <svg class="about-preview__feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              <span>End-to-End Production</span>
+            </div>
+            <div class="about-preview__feature">
+              <svg class="about-preview__feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              <span>Creative Strategy</span>
+            </div>
+            <div class="about-preview__feature">
+              <svg class="about-preview__feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              <span>On-Time Delivery</span>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn btn--outline" id="about-cta">
+            Learn Our Story
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__icon">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="text-label">Testimonials</span>
+        <h2 class="heading-lg">What Our <span class="text-gradient">Clients Say</span></h2>
+        <p class="text-body-lg">We're proud of the relationships we build and the results we deliver.</p>
+      </div>
+
+      <div class="testimonials__grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card reveal delay-1" id="testimonial-1">
+          <div class="testimonial-card__stars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <p class="testimonial-card__quote">Satvik Production transformed our brand's visual identity. Their team's
+            creativity and professionalism exceeded every expectation. The campaign they produced drove a 40% increase
+            in engagement.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">RP</div>
+            <div>
+              <div class="testimonial-card__name">Raj Patel</div>
+              <div class="testimonial-card__role">CEO, TechVista Solutions</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card reveal delay-2" id="testimonial-2">
+          <div class="testimonial-card__stars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <p class="testimonial-card__quote">Working with Satvik was an absolute pleasure. They managed our entire
+            social media presence and the results speak for themselves — 3x follower growth in just 6 months!</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">AM</div>
+            <div>
+              <div class="testimonial-card__name">Anita Mehta</div>
+              <div class="testimonial-card__role">Marketing Head, StyleBrand</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card reveal delay-3" id="testimonial-3">
+          <div class="testimonial-card__stars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <p class="testimonial-card__quote">The short film they produced for our brand launch was nothing short of
+            cinematic brilliance. Satvik Production truly understands the art of visual storytelling.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">VK</div>
+            <div>
+              <div class="testimonial-card__name">Vikram Kumar</div>
+              <div class="testimonial-card__role">Founder, EcoWear India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER ==================== -->
+  <section class="section cta-banner" id="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner reveal-scale">
+        <div class="cta-banner__content">
+          <h2 class="cta-banner__title">
+            Let's Create Something<br>
+            <span class="text-gradient">Amazing Together</span>
+          </h2>
+          <p class="cta-banner__desc">
+            Ready to bring your vision to life? Whether it's a brand campaign, a short film, or a complete digital
+            strategy — we're here to make it happen.
+          </p>
+          <div class="cta-banner__actions">
+            <a href="contact.html" class="btn btn--primary btn--large" id="cta-contact">
+              Start Your Project
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__icon">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+            <a href="portfolio.html" class="btn btn--outline" id="cta-portfolio">
+              View Portfolio
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <div class="footer__brand-logo">Satvik <span>Production</span></div>
+          <p class="footer__brand-desc">
+            A premium production house dedicated to creating unforgettable visual experiences. From brand campaigns to
+            cinematic storytelling, we bring your vision to life.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/satvik_productions" class="footer__social-link" aria-label="Instagram"
+              id="social-instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="http://www.youtube.com/@SatvikProductions" class="footer__social-link" aria-label="YouTube"
+              id="social-youtube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                <path d="m10 15 5-3-5-3z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn" id="social-linkedin">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook" id="social-facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__column">
+          <h4 class="footer__column-title">Quick Links</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="services.html" class="footer__link">Services</a>
+          <a href="portfolio.html" class="footer__link">Portfolio</a>
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+
+        <!-- Services -->
+        <div class="footer__column">
+          <h4 class="footer__column-title">Services</h4>
+          <a href="services.html" class="footer__link">Digital Marketing</a>
+          <a href="services.html" class="footer__link">Brand Advertisement</a>
+          <a href="services.html" class="footer__link">Storytelling</a>
+          <a href="services.html" class="footer__link">Social Media</a>
+          <a href="services.html" class="footer__link">Video Production</a>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer__column">
+          <h4 class="footer__column-title">Get in Touch</h4>
+          <a href="mailto:satvik.productions@hotmail.com" class="footer__link">satvik.productions@hotmail.com</a>
+          <a href="tel:+919638127812" class="footer__link">+91 96381 27812</a>
+          <span class="footer__link">Gujarat, India</span>
+          <span class="footer__link">Mon - Sat: 10AM - 7PM</span>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2026 Satvik Production. All rights reserved.
+        </p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6" />
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=1.6"></script>
+  <script src="js/animations.js?v=1.3"></script>
+</body>
+
+</html>
+
+
+

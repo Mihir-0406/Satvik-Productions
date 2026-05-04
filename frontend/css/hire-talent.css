@@ -1,0 +1,146 @@
+/* ============================================
+   SATVIK PRODUCTION — Hire Talent Page Styles
+   ============================================ */
+
+/* ========================
+   HIRE HERO
+   ======================== */
+.hire-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.hire-hero__bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 10, 15, 0.95) 0%,
+    rgba(34, 34, 55, 0.8) 100%
+  );
+}
+
+.hire-hero__content {
+  position: relative;
+  z-index: var(--z-base);
+  max-width: 800px;
+  margin-top: 80px;
+}
+
+/* ========================
+   TALENT FILTER
+   ======================== */
+.talent-filters {
+  padding: var(--space-xl) 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-3xl);
+}
+
+/* ========================
+   TALENT GRID
+   ======================== */
+.talent-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-bottom: var(--space-5xl);
+}
+
+.talent-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.talent-card:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-glow);
+}
+
+.talent-card__image-wrapper {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+}
+
+.talent-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.talent-card:hover .talent-card__image {
+  transform: scale(1.05);
+}
+
+.talent-card__content {
+  padding: var(--space-xl);
+  text-align: center;
+}
+
+.talent-card__category {
+  font-family: var(--font-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-xs);
+  display: block;
+}
+
+.talent-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.talent-card__experience {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-lg);
+}
+
+.talent-card__action {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-hover);
+  color: var(--accent-primary);
+  background: transparent;
+  font-family: var(--font-accent);
+  font-weight: 600;
+  transition: all var(--transition-base);
+}
+
+.talent-card:hover .talent-card__action {
+  background: var(--gradient-accent);
+  color: var(--bg-primary);
+  border-color: transparent;
+}
+
+@media (max-width: 1024px) {
+  .talent-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .talent-grid {
+    grid-template-columns: 1fr;
+  }
+}
