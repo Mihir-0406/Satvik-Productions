@@ -43,39 +43,6 @@ Satvik Production/
 
 ---
 
-## ⚙️ Installation & Setup
-
-### 1. Prerequisites
-- [Node.js](https://nodejs.org/) installed
-- [MongoDB](https://www.mongodb.com/try/download/community) installed and running locally
-
-### 2. Backend Configuration
-1. Navigate to the `backend` folder:
-   ```bash
-   cd backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Create/Configure your `.env` file:
-   ```env
-   PORT=5000
-   MONGODB_URI=mongodb://127.0.0.1:27017/satvik_productions
-   EMAIL_USER=your-email@gmail.com
-   EMAIL_PASS=your-app-password
-   ```
-4. Start the server:
-   ```bash
-   node server.js
-   ```
-
-### 3. Frontend Setup
-1. Open the `frontend` folder.
-2. Launch `index.html` using a Live Server (e.g., VS Code Live Server) or simply open it in your browser.
-
----
-
 ## 📬 Contact
 
 For inquiries or collaborations, please reach out to:
